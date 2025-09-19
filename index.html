@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="leftPart">
+                <span id="playerName1"></span>
+                <input type="text" placeholder="Введіть ім'я" id="player1NameInput">
+                <button id="player1NameButton">Save</button>
+                <div id="score1">0</div>
+            </div>
+            <div class="centrePart">
+                <button id="settingsButton">Settings</button>
+                <div id="total">0</div>
+            </div>
+            <div class="rightPart">
+                <span id="playerName2"></span>
+                <input type="text" placeholder="Введіть ім'я" id="player2NameInput">
+                <button id="player2NameButton">Save</button>
+                <div id="score2">0</div>
+            </div>
+        </header>
+
+        <!-- Модальне вікно для налаштувань -->
+        <!-- Модальне вікно для налаштувань -->
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <h2>Settings</h2>
+                <label for="playerSize">Розмір гравця</label>
+                <input type="number" id="playerSize" value="20" min="10" max="50">
+                <br>
+                <label for="playerSpeed">Швидкість гравця</label>
+                <input type="number" id="playerSpeed" value="5" min="1" max="20">
+                <br>
+                <label for="player1Color">Колір гравця 1</label>
+                <input type="color" id="player1Color" value="#ffff00">
+                <br>
+                <label for="player2Color">Колір гравця 2</label>
+                <input type="color" id="player2Color" value="#ff6600">
+                <br>
+                <button id="saveSettings">Save</button>
+                <button id="closeSettings">Закрити</button>
+            
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

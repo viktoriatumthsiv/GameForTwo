@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(181, 137, 231);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(77, 102, 216, 0.596);
+    display: flex;
+    justify-content: space-between;
+}
+
+.player,
+.object {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    border-radius: 100%;
+    box-shadow: 0px 54px 55px rgba(0, 0, 0, 0.25), 0px -12px 30px rgba(0, 0, 0, 0.12), 0px 4px 6px rgba(0, 0, 0, 0.12), 0px 12px 13px rgba(0, 0, 0, 0.17), 0px -3px 5px rgba(0, 0, 0, 0.09);
+}
+
+.object {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    background-color: red;
+}
+
+.object:hover {
+    background-color: green;
+}
+
+.player {
+    transition: all 0.1s ease;
+}
+/* Стилі для модального вікна */
+/* Стилі для модального вікна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
